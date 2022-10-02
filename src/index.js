@@ -1,4 +1,3 @@
-import ShoppingList from "./shoppingList";
 import { render } from "@testing-library/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
