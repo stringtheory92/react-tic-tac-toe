@@ -1,30 +1,11 @@
-import { Component } from "react";
-import Board from "./board";
+import React, { Component } from "react";
 import Game from "./game";
-//import Board from "./board.jsx";
+import Board from "./board";
 
-// class Square extends Component {
-//   render() {
-//     return (
-//       <button
-//         className="square"
-//         onClick={() => {
-//           this.props.onClick();
-//         }}
-//       >
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
-
-function Square(props) {
-  //console.log(props);
-  return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
-    </button>
-  );
+export class Square extends Component {
+  render() {
+    return <div>Square</div>;
+  }
 }
 
 export default Square;
