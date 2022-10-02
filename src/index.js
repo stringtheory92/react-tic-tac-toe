@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Clock from "./clock";
+import ShoppingList from "./shoppingList";
+import { render } from "@testing-library/react";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Square from "./square.jsx";
+import Board from "./board.jsx";
+import Game from "./game.jsx";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const page = (
+  <div className="div-class">
+    <ShoppingList />
+    <Game />
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(page);
